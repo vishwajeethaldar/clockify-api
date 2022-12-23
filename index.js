@@ -11,7 +11,7 @@ const Users = require("./src/features/users/users.model");
 const app = express();
 dotenv.config()
 app.use(cors({
-    origin:['https://effortless-smakager-c491a1.netlify.app/']
+    origin:"*"
 }));
 
 app.use(express.urlencoded({
